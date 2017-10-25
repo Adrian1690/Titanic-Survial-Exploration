@@ -12946,7 +12946,16 @@ SZIqypCXJKmiDHlJkirKkJckqaL+Pz6GmsawEUDlAAAAAElFTkSuQmCC
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&quot;&quot;&quot; Model with multiple features. Makes a prediction with an accuracy of at least 80%. &quot;&quot;&quot;</span>
-
+<span class="sd">&#39;&#39;&#39; </span>
+<span class="sd">    If a passenger is female and is not Pclass 3, They will survive</span>
+<span class="sd">    View =&gt;  vs.survival_stats(data, outcomes, &#39;Age&#39;, [&quot;Sex == &#39;female&#39;&quot;, &quot;Pclass == 3&quot;])</span>
+<span class="sd">    </span>
+<span class="sd">    If a passenger is female and is Pclass 3 and her age is between 40 and 59, they will not  died</span>
+<span class="sd">    Viwe =&gt;  vs.survival_stats(data, outcomes, &#39;Age&#39;, [&quot;Sex == &#39;female&#39;&quot;, &quot;Pclass == 3&quot;])</span>
+<span class="sd">    </span>
+<span class="sd">    If a passenger is male and his age is less than 10, they will survive </span>
+<span class="sd">    View =&gt; vs.survival_stats(data, outcomes, &#39;Age&#39;, [&quot;Sex == &#39;male&#39;&quot;, &quot;Age &lt; 18&quot;])</span>
+<span class="sd">&#39;&#39;&#39;</span>
 <span class="k">def</span> <span class="nf">predictions_3</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     
     <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
